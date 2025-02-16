@@ -1,0 +1,38 @@
+.item {
+    width: 250px;         /* Reduced size of each item */
+    margin: 5px;          /* Reduced margin between items */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+  }
+  
+  .item img {
+    width: 100%;          /* Image takes up full width of its container */
+    height: auto;         /* Maintains the aspect ratio */
+    object-fit: cover;    /* Ensures the image covers the container without stretching */
+    display: block;       /* Removes any space below the image */
+    border-radius: 8px;   /* Optional: Adds rounded corners */
+  }
+.item p{
+    margin: 6px 0px;
+}
+.item-prices{
+    display: flex;
+    gap: 20px;
+}
+.item-price-new{
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+.item-price-old{
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
